@@ -3,25 +3,24 @@ import React, { useRef, useState, useEffect, Dispatch, SetStateAction } from 're
 
 const useRotatingAnimation = (): [Dispatch<SetStateAction<boolean>>, React.MutableRefObject<HTMLDivElement | null>] => {
     const [hover, setHover] = useState(false);
-    const ref = useRef(null);
+    const ref = useRef<HTMLDivElement |null >(null);
     useEffect(() => {
         if (!hover) return;
 
         let animationId: number;
-        let lastTimestamp;
+        let lastTimestamp:number;
 
-        const changeAngle = (timestamp) => {
+        const changeAngle = (timestamp:number) => {
             if (!lastTimestamp) {
                 lastTimestamp = timestamp;
             }
             const deltaTime = timestamp - lastTimestamp;
 
             if (deltaTime > 1000 / 60) {
-                if (ref.current) {
+                if (ref && ref.current) {
                     let styles = window.getComputedStyle(ref.current);
                     let currentAngle = parseFloat(styles.getPropertyValue("--angle"));
                     let angle = (currentAngle + 1) % 360;
-
                     ref.current.style.setProperty('--angle', angle + 'deg');
                 }
                 lastTimestamp = timestamp;

@@ -16,12 +16,12 @@ const Blog = () => {
                         <ParagraphText className="text-gray-400" size="md" font={AppFont.Inter}>{blog.title}</ParagraphText>
                         <span className="flex items-center gap-2 " >
                             {blog.tags && blog.tags.map((tag)=>(
-                               <p className='bg-border p-1 rounded-md text-xs text-accent' >{tag}</p>  
+                               <p key={tag} className='bg-border p-1 rounded-md text-xs text-accent' >{tag}</p>  
                             ))}
                         </span>
                         <span className="flex flex-col gap-1" >
                             {blog.highlights && blog.highlights.map((highlight)=>(
-                                <p className='text-xs text-accent underline' >{highlight}</p>
+                                <p key={highlight} className='text-xs text-accent underline' >{highlight}</p>
                             ))}
                         </span>
                         <span className="flex items-center gap-2 " >

@@ -42,13 +42,45 @@
   border-radius: 1.5rem;
   pointer-events: none;
   position: absolute;
-  transition: background-position .8s ease;
+  transition: background-position .8s linear;
   z-index: -10;
 }
 .backShin:hover::after{
   background-position: 100% 100%;
   transform: translate3d(0,0, 0) ,rotate(0) ,skew(0), skewY(0) ,scaleX(0), scaleY(0);
 }
+.backShin-animation{
+        position: relative;
+      
+}
+.backShin-animation::after{
+  border-radius: 50px;
+  content: "";
+  background: linear-gradient(to right, #1f2836 0, #2e3c51 34%, #2e3c51 49%, #aaaaaa 57%, #dfdfdf 64%, #685197 66%, #5398bd 100%);
+  background-size: 300% 100%;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  inset: -1px;
+  border-radius: 1.5rem;
+  pointer-events: none;
+  position: absolute;
+  z-index: -10;
+}
+.backShin-animation:hover::after{
+  animation: backshinKeyFram  linear 2s ;
+
+}
+  @keyframes backshinKeyFram{
+    
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 150% 150%;
+    }
+  }
+
+
 .circleAnimationContainer{
   opacity: 0;
   flex:none;

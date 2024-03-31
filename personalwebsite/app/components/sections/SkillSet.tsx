@@ -17,7 +17,7 @@ const SkillSet = () => {
             <div className=" flex-1 flex gap-4 items-center justify-center  " >
                 <div onMouseEnter={() => setHoverOne(true)} onMouseLeave={() => setHoverOne(false)} className="relative group " >
                     <div className="circleAnimationContainer group-hover:opacity-100 " >
-                        <div style={{ '--angle': '88deg' }} ref={divRefOne} className="circleAnimation" ></div>
+                        <div style={{ '--angle': '88deg' } as React.CSSProperties}  ref={divRefOne} className="circleAnimation" ></div>
                     </div>
                     <Image className="relative z-1" src="FrontendIcon.svg"
                         height={200}
@@ -30,7 +30,7 @@ const SkillSet = () => {
                 </div>
                 <div onMouseEnter={() => setHoverTwo(true)} onMouseLeave={() => setHoverTwo(false)} className="relative group " >
                     <div className="circleAnimationContainer group-hover:opacity-100 " >
-                        <div style={{ '--angle': '88deg' }} ref={divRefTwo} className="circleAnimation" ></div>
+                        <div style={{ '--angle': '88deg' }as React.CSSProperties} ref={divRefTwo} className="circleAnimation" ></div>
                     </div>
                     <Image className="relative z-1" src="BackendIcon.svg"
                         height={200}
@@ -43,7 +43,7 @@ const SkillSet = () => {
                 </div>
                 <div onMouseEnter={() => setHoverThree(true)} onMouseLeave={() => setHoverThree(false)} className="relative group " >
                     <div className="circleAnimationContainer group-hover:opacity-100 " >
-                        <div style={{ '--angle': '88deg' }} ref={divRefTHree} className="circleAnimation" ></div>
+                        <div style={{ '--angle': '88deg' }as React.CSSProperties} ref={divRefTHree} className="circleAnimation" ></div>
                     </div>
                     <Image className="relative z-1" src="UxIcon.svg"
                         height={200}

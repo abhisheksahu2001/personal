@@ -59,16 +59,29 @@ export const Blogs = [
         title: 'Builder Design Pattern JavaScript',
         views: '800+',
         icon: '/software.png',
+        tags:['Design Pattern' , 'JavaScript'],
+        highlights:[
+        "Implementation of the above Example using Builder Design Pattern",
+        "Advantages of the Builder Design Pattern",
+        "Disadvantages of the Builder Design Pattern",
+        
+        ],
         date: '2023',
-        link: '',
+        link: 'https://www.geeksforgeeks.org/builder-method-javascript-design-pattern/',
     },
     {
         id: 'blog2',
         title: 'Factory Design Pattern JavaScript',
         views: '1k+',
         icon: '/system.png',
+        tags:['Design Pattern' , 'JavaScript'],
+        highlights:[
+            "Example of Factory Method in JavaScript Design Pattern",
+            "Advantages of Factory Method in JavaScript Design Pattern",
+            "Disadvantages of Factory Method in JavaScript Design Pattern",
+        ],
         date: '2023',
-        link: '',
+        link: 'https://www.geeksforgeeks.org/factory-method-in-javascript-design-pattern/',
     }
 
 ]

@@ -1,10 +1,7 @@
-'use client'
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import { LuExternalLink } from "react-icons/lu";
 import Image from "next/image"
-import { useCursorHook } from '../utils/useCursorHook';
 import classNames from 'classnames';
-import { before } from 'node:test';
 
 interface IWindow {
     ImagesURLs: string[],
@@ -13,25 +10,10 @@ interface IWindow {
 }
 
 const Window: React.FC<IWindow> = ({ ImagesURLs, link, idx }) => {
-    const [showCursorUI, setShowCursorUI] = useState(false);
-    const ImageContainerRef = useRef(null)
-    const { xy, updateCurserCoordinates } = useCursorHook()
-    const handleCursorMovement = (e) => {
-        updateCurserCoordinates(e, ImageContainerRef, idx)
-    }
     return (
         <div
-            badge="Scroll Down"
-            ref={ImageContainerRef}
-            style={{ "--x": `${xy.x}px`, "--y": `${xy.y}px` }}
-            onMouseMove={(e) => handleCursorMovement(e)}
-            onMouseLeave={() => setShowCursorUI(false)}
-            onMouseEnter={() => setShowCursorUI(true)}
             className={classNames('bg-[#0e0e0f] w-[450px] h-[500px] border border-border group  no-scrollbar overflow-y-scroll',
-                'before:content-[attr(badge)] before:text-xxs before:capitalize before:font-medium hover:cursor-none  before:px-4 before:py-1',
-                ' before:rounded-full before:bg-primary before:border before:border-border before:shadow-xl',
-                'before:text-white before:absolute before:translate-x-[var(--x)] before:translate-y-[var(--y)]',
-                showCursorUI ? 'before:block' : 'before:hidden'
+               
             )} >
             <a target="_blank" rel="noopener noreferrer" href={link} className='flex items-center justify-between px-5 py-3 gap-3 h-14  sticky  bg-[#0e0e0f]   top-0 ' >
                 <div className='flex items-center gap-2 justify-center  w-[10%]    ' >

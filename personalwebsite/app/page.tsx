@@ -22,19 +22,19 @@ export default function Home() {
       <div className=""  >
         <Navbar />
       </div>
-      <div className="grid gap-2 overflow-hidden   grid-rows-[525px,300px] grid-cols-[1fr,900px]  " >
-        <div className=" row-span-1   " ><Introduction /></div>
+      <div className="grid gap-2 xl:overflow-hidden   grid-rows-[525px,300px] grid-cols-1 lg:grid-cols-[1fr,900px]  " >
+        <div className=" lg:row-span-1   " ><Introduction /></div>
         <div className="row-span-2   flex flex-col  " >
           <ScrollProvider>
             <Work />
           </ScrollProvider>
-          <Footer />
+          <Footer classnames=" hidden lg:flex" />
         </div>
-        <div className=" p-2 bg-primary rounded-3xl flex items-center gap-2"  >
+        <div className=" p-2 bg-primary rounded-3xl flex flex-col md:flex-row items-center gap-2"  >
           <Education />
           <SkillSet />
         </div>
-
+        <Footer classnames=" lg:hidden block" />
       </div>
     </section>
   );

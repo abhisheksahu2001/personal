@@ -10,7 +10,7 @@ const SkillSet = () => {
     const [setHoverTwo, divRefTwo] = useRotatingAnimation()
     const [setHoverThree, divRefTHree] = useRotatingAnimation()
     return (
-        <div className='max-w-[500px] p-4 w-full h-full bg-[#0e0e0f] border border-border rounded-3xl flex flex-col'>
+        <div className=' hidden md:flex max-w-[500px] p-4 w-full h-full bg-[#0e0e0f] border border-border rounded-3xl flex flex-col'>
             <SpecialText className='text-accent' font={AppFont.Koulen} size='md'  >
                 What can i do ?
             </SpecialText>

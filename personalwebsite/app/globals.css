@@ -15,7 +15,7 @@
   
 }
 .highlight_Text{
-  @apply text-slate-100 hover:text-accent hover:underline;
+  @apply  text-slate-100 hover:text-accent hover:underline;
 }   
 .highlight_Text2{
   @apply text-slate-200/70  font-normal text-base  ;
@@ -69,5 +69,22 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .backShin::after{
+    background-position: 100% 100%;
+    transform: translate3d(0,0, 0) ,rotate(0) ,skew(0), skewY(0) ,scaleX(0), scaleY(0);
+  }
+  .circleAnimationContainer{
+    height: 56px;
+    width: 62px;
+  }
+  .highlight_Text{
+    font-size: 14px;
+  }
+  .highlight_Text2{
+    font-size: 12px;
   }
 }

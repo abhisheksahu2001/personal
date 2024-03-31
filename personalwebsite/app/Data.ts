@@ -26,7 +26,7 @@ export const ProjectData = [
         SourceCodeHosted: true,
         repoLink: "https://github.com/abhisheksahu2001/Stay",
         TechStack: ['typescript', 'Nextjs', 'tailwind', 'MongoDb', 'RestApi', 'Prisma'],
-        projectImages: ['/link1', '/link2'],
+        projectImages: ['/stay1.png', '/stay2.png'],
         note: 'I made this project for my learning.'
     },
 ]

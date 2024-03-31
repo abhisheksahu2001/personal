@@ -26,10 +26,10 @@ const Projects: React.FC<IProject> = ({ isWorkSelected }) => {
 
     return (
         <section className=' scroll-smooth   '>
-            <div onScroll={(e) => updateScrollContext(e)} className='w-full flex flex-col p-8 gap-2 max-h-[540px] scroll-smooth   overflow-y-scroll no-scrollbar lg:min-w-[1000px]' >
+            <div onScroll={(e) => updateScrollContext(e)} className='w-full flex flex-col p-2 md:p-8 gap-2 md:max-h-[540px] scroll-smooth   overflow-y-scroll no-scrollbar lg:min-w-[1000px]' >
                 {ProjectData && ProjectData.map((item, i) => (
-                    <div key={i} className='flex   ' >
-                        <div className='p-4 bg-primary w-[40%] min-h-[300px] h-max flex flex-col   border border-border'>
+                    <div key={i} className='flex flex-col  md:flex-row  ' >
+                        <div className='p-4 bg-primary md:w-[40%] min-h-[300px] h-max flex flex-col   border border-border'>
                             <div className='flex items-center justify-between' >
                                 <SpecialText font={AppFont.Koulen} className="text-accent" >{item.name}</SpecialText>
                                 <div className='flex items-center gap-4' >

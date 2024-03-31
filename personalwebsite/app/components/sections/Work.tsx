@@ -14,8 +14,8 @@ const Work = () => {
     const [navToggle, setNavToggle] = useState("work");
 
     return (
-        <div className='min-h-[600px]' >
-            <nav className='flex items-center gap-2 px-4 pt-2 '>
+        <div className='md:min-h-[600px]' >
+            <nav className='flex  items-center gap-2 px-4 pt-2 '>
                 <button onClick={() => setNavToggle('work')} type='button'>
                     <SpecialText
                         style={{ '--blue-percentage': '0%', '--white-percentage': navToggle === 'work' ? `${projectSectionScrollPercentage}%` : '0%' }}

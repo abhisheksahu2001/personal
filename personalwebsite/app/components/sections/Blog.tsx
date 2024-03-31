@@ -9,7 +9,7 @@ const Blog = () => {
     return (
         <div className="flex gap-4 flex-col p-5 px-4 " >
             {Blogs && Blogs.map((blog) => (
-                <a href={blog.link} key={blog.id} target="_blank" className='hover:border hover:border-border w-2/3 bg-primary rounded-lg p-4  ' >
+                <a href={blog.link} key={blog.id} target="_blank" className='hover:border hover:border-border md:w-2/3 bg-primary rounded-lg p-4  ' >
                 <span className="flex gap-4 items-center  " >
                     <Image alt='icon' src={blog.icon} width={80} height={80} />
                     <div className="flex flex-col items-start gap-2  " >

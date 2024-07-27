@@ -1,7 +1,7 @@
 export const PersonalData = {
     intro: "In <B class='highlight_Text' >2020</B>, I embarked on a journey to pursue a Bachelor of Technology in Computer Science Engineering at Lakshmi Narain College of Technology, where I cultivated a passion for creating innovative solutions.",
     intro2: "Driven by a desire to excel, I've participated in prestigious <B class='highlight_Text' >hackathons</B>, earning pool prize in the Moralis hackathon and being a finalist in the Smart India hackathon.Beyond academics, I\'ve actively engaged in co-curricular activities, managed a team of interns in a startup and contributing to the <B class='highlight_Text' >development</B> of impactful web applications. Looking ahead, I am enthusiastic about leveraging my skills and experiences to <B class='highlight_Text' >contribute</B> to innovative projects, always striving to make a meaningful difference.",
-    cv: 'https://drive.google.com/file/d/1lFQ3dyFonzoBZdiFLzQLrldiXFyGrYX2/view?usp=sharing',
+    cv: 'https://drive.google.com/file/d/1L6HD1QjSKUveamDwD7fTg5aFR6_RKcrj/view?usp=sharing',
     email: 'abhisheksahu20010525@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/abhishek-kumar-sahu-6a108b15a',
 
